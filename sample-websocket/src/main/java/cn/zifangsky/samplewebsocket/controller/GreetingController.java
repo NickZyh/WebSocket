@@ -6,9 +6,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Greeting
- * @author zifangsky
- * @date 2018/9/30
- * @since 1.0.0
  */
 @Controller
 public class GreetingController {

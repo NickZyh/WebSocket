@@ -6,6 +6,9 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
+/**
+ * 使得Springboot能夠使用并解析支持Servlet的注解,如Servlet、Filter、Listener可以直接通过@WebServlet、@WebFilter、@WebListener注解自动注册，无需其他代码
+ **/
 @ServletComponentScan
 @EnableAsync
 public class SampleWebsocketApplication {

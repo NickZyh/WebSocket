@@ -12,17 +12,6 @@ import java.util.Locale;
 
 /**
  * Date相关公共方法
- *
- * @author zifangsky
- * @date 2018/7/27
- * @since 1.0.0
- */
-/**
- * Date相关公共方法
- *
- * @author zifangsky
- * @date 2018/7/27
- * @since 1.0.0
  */
 public class DateUtils {
     private static final String DEFAULT_DATE_TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";

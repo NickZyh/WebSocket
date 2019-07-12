@@ -1,0 +1,10 @@
+1 @EnableWebsocket导入DelegatingWebSocketConfiguration
+2 DelegatingWebSocketConfiguration 中干了两件事
+    1 收集所有WebSocketConfigurer信息
+        1 配置暴露 websocket 接口的地址
+        2 websocket接口地址的回调类
+    2 通过registerWebSocketHandlers(WebSocketHandlerRegistry registry)将所有WebSocketConfigurer全部收集到WebSocketHandlerRegistry中
+3 WebSocketConfigurationSupport中通过webSocketHandlerMapping()获取到HandlerMapping,换句话说就是暴露出的websocket地址,这样就能让springmvc进行映射
+4 ServletWebSocketHandlerRegistration是WebSocketHandlerRegistry中存放的信息
+    private final List<ServletWebSocketHandlerRegistration> registrations = new ArrayList<ServletWebSocketHandlerRegistration>();
+

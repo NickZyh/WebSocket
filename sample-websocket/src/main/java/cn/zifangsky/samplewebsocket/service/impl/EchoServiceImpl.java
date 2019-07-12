@@ -16,6 +16,7 @@ public class EchoServiceImpl implements EchoService {
 
     @Override
     public String echo(String message) {
+
         return MessageFormat.format("Did you say \"{0}\"?", message);
     }
 }

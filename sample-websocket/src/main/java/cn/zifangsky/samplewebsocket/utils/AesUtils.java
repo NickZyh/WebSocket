@@ -15,10 +15,6 @@ import java.text.MessageFormat;
 
 /**
  * AES加解密
- *
- * @author zifangsky
- * @date 2018/8/14
- * @since 1.0.0
  */
 public class AesUtils {
     /**
